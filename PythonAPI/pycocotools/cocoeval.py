@@ -417,9 +417,8 @@ class COCOeval:
             'scores': scores,
         }
         toc = time.time()
-        return precision
         print('DONE (t={:0.2f}s).'.format( toc-tic))
-
+        return precision
     def summarize(self):
         '''
         Compute and display summary metrics for evaluation results.
