@@ -417,6 +417,7 @@ class COCOeval:
             'scores': scores,
         }
         toc = time.time()
+        return precision
         print('DONE (t={:0.2f}s).'.format( toc-tic))
 
     def summarize(self):
